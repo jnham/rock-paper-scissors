@@ -1,3 +1,104 @@
 body {
     text-align: center;
+    background-color: whitesmoke;
+    max-width: 1920px;
+    margin: auto;
+}
+
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    margin: auto;
+    max-width: 1000px;
+    min-height: 0;
+    min-width: 0;
+    
+}
+
+.player-choice {
+    min-width: 0;
+    min-height: 0;
+    max-width: 200px;
+}
+
+.computer-choice {
+    min-width: 0;
+    min-height: 0;
+    max-width: 200px;
+}
+
+#playerChoice {
+    max-width: 200px;
+    width: 100%;
+}
+
+#computerChoice {
+    max-width: 200px;
+    width: 100%;
+}
+
+.player-score {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.computer-score {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.result-image {
+    min-width: 0;
+    min-height: 0;
+    max-width: 300px;
+    max-height: 300px;
+}
+
+#resultImage {
+    width: 100%;
+    max-height: 300px;
+    max-width: 300px;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    max-width: 1000px;
+    margin: auto;
+    align-items: center;
+}
+
+.rock {
+    max-width: 200px;
+    min-width: 0px;
+    min-height: 0px;
+}
+
+.paper {
+    max-width: 200px;
+    min-width: 0px;
+    min-height: 0px;
+}
+
+.scissors {
+    max-width: 200px;
+    min-width: 0px;
+    min-height: 0px;
+}
+
+.gameicon {
+    width: 100%;
+    max-width: 200px;
+    min-width: 0px;
+    min-height: 0px;
+}
+
+.reset {
+    display: none;
 }

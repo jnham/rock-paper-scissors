@@ -10,9 +10,54 @@
 
     <body>
         
-        <h1>Rock Paper Scissors</h1>
-        <p>Click to play!</p>
-        <input type="button" onclick="game()" value="Play">
+        <h1>You Have Been Challenged!</h1>
+        <div class="h2-class">
+            <h2 id="status-text">Rock Paper Scissors... First to 5 wins...</h2>
+        </div>
+            <div class="container">
+                <div class="player">
+                    <h2>Player</h2>
+                    <div id="player-choice">
+                        <img id="playerChoice" src="images/question.png">
+                    </div>
+                    <div class="player-score">
+                        <h3>Score:</h3>
+                        <h3 id="player-score">0</h3>
+                    </div>
+                </div>
+                <div class="result">
+                    <div class="result-image">
+                        <img id="resultImage" src="images/angry-cat.jpg">
+                    </div>
+                </div>
+                <div class="computer">
+                    <h2>Cat</h2>
+                    <div id="computer-choice">
+                        <img id="computerChoice" src="images/question.png">
+                    </div>
+                    <div class="computer-score">
+                        <h3>Score:</h3>
+                        <h3 id="computer-score">0</h3>
+                    </div>
+                </div>
+            </div>
+        <h2 id="weapon-text">Choose your weapon!</h2>
+
+        <div class="icons" id="icons">
+            <div class="rock">
+                <input class="gameicon" type="image" src="images/rock.png" onclick="playRound('rock', getComputerChoice())"/>
+            </div>
+            <div class="paper">
+                <input class="gameicon" type="image" src="images/paper1.png" onclick="playRound('paper', getComputerChoice())"/>
+            </div>
+            <div class="scissors">
+                <input class="gameicon" type="image" src="images/scissors.png" onclick="playRound('scissors', getComputerChoice())"/>
+            </div>
+        </div>
+
+        <div class="reset" id="reset">
+            <input class="gameicon" type="image" src="images/playagain.png" onclick="reset()"/>
+        </div>
 
         <script src="script.js"></script>
 
